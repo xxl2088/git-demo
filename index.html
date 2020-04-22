@@ -9,5 +9,14 @@
 解决远程仓库地址过长，给远程仓库地址起个别名
 $ git remote add origin https://github.com/xxl2088/git-demo.git
 Origin就是别名
+现在我们修改index.html文件类容，再从新推送
+$ git add index.html
+$ git commit -m 程序员A第二次提交
+$ git push origin master
+第二次推送的时候没有要求填写登录信息，这是因为win10系统帮我们填写了。
+Win10系统把用户名和密码保存在了
+Windows>设置>搜索‘控制面板’>查看方式：大图标>凭据管理器>windows凭据>普通凭据
+如果删除的话，下次又要填写登录信息了。
+$ git push -u origin master//在push后面加了-u之后，就记住了远程地址和分支信息，下次就直接$ git push就可以了。
 </body>
 </html>
